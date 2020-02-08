@@ -2,7 +2,6 @@ import React, { useEffect, useContext } from "react";
 import DataContext from "../context/data/dataContext";
 import Hero from "./Hero/Hero";
 import Navbar from "./nav/Nav";
-import DataContext from '../context/data/dataContext';
 import Transactions from '../components/Transactions';
 
 const Home = () => {
