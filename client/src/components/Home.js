@@ -1,6 +1,7 @@
-import React, { useEffect, useContext } from 'react';
-import DataContext from '../context/data/dataContext';
-import Hero from './Hero/Hero'
+import React, { useEffect, useContext } from "react";
+import DataContext from "../context/data/dataContext";
+import Hero from "./Hero/Hero";
+import Navbar from "./nav/Nav";
 
 const Home = () => {
   const dataContext = useContext(DataContext);
@@ -10,8 +11,8 @@ const Home = () => {
   }, []);
   return (
     <div>
-      <h2>NavBar</h2>
-      <Hero/>
+      <Navbar />
+      <Hero />
     </div>
   );
 };
