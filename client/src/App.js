@@ -4,6 +4,7 @@ import AuthState from './context/auth/AuthState';
 import DataState from './context/data/dataState';
 import Home from './components/Home';
 import Register from './components/Register';
+import Transactions from './components/Transactions';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
               <Route exact path='/' component={Home} />
               <Route exact path='/register' component={Register} />
             </Switch>
+            <Transactions />
           </div>
         </Fragment>
       </Router>
