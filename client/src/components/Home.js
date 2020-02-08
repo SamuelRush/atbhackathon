@@ -1,16 +1,17 @@
 import React, { useEffect, useContext } from 'react';
 import DataContext from '../context/data/dataContext';
+import Hero from './Hero/Hero'
 
 const Home = () => {
   const dataContext = useContext(DataContext);
 
   useEffect(() => {
     dataContext.getData();
-    // eslint-disable-next-line
   }, []);
   return (
     <div>
-      <h2>Home page</h2>
+      <h2>NavBar</h2>
+      <Hero/>
     </div>
   );
 };
