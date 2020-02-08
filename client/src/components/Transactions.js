@@ -147,32 +147,24 @@ const VirtualizedTable = withStyles(styles)(MuiVirtualizedTable);
 
 // ---
 
-const sample = [
-  ['Frozen yoghurt', 159, 6.0, 24, 4.0],
-  ['Ice cream sandwich', 237, 9.0, 37, 4.3],
-  ['Eclair', 262, 16.0, 24, 6.0],
-  ['Cupcake', 305, 3.7, 67, 4.3],
-  ['Gingerbread', 356, 16.0, 49, 3.9],
-];
 
-const transactions = [
-  ['Frozen yoghurt', 159, 6.0, 24, 4.0],
-  ['Ice cream sandwich', 237, 9.0, 37, 4.3],
-  ['Eclair', 262, 16.0, 24, 6.0],
-  ['Cupcake', 305, 3.7, 67, 4.3],
-  ['Gingerbread', 356, 16.0, 49, 3.9],
+const rows = [
+  { id: 0, date: '2020-01-19', description: 'Safeway', amount: 234.56, category: 'Food' },
+  { id: 1, date: '2020-01-19', description: 'Esso', amount: 50.34, category: 'Gas' },
+  { id: 2, date: '2020-01-20', description: 'Best Buy', amount: 2300.21, category: 'Consumer' },
+  { id: 3, date: '2020-01-21', description: 'Costco', amount: 337.35, category: 'Food' },
+  { id: 4, date: '2020-01-24', description: 'TD-Mortgage', amount: 998.78, category: 'Housing' },
+  { id: 5, date: '2020-01-19', description: 'Safeway', amount: 234.56, category: 'Food' },
+  { id: 6, date: '2020-01-19', description: 'Esso', amount: 50.34, category: 'Gas' },
+  { id: 7, date: '2020-01-20', description: 'Best Buy', amount: 2300.21, category: 'Consumer' },
+  { id: 8, date: '2020-01-21', description: 'Costco', amount: 337.35, category: 'Food' },
+  { id: 9, date: '2020-01-24', description: 'TD-Mortgage', amount: 998.78, category: 'Housing' },
+  { id: 10, date: '2020-01-19', description: 'Safeway', amount: 234.56, category: 'Food' },
+  { id: 11, date: '2020-01-19', description: 'Esso', amount: 50.34, category: 'Gas' },
+  { id: 12, date: '2020-01-20', description: 'Best Buy', amount: 2300.21, category: 'Consumer' },
+  { id: 13, date: '2020-01-21', description: 'Costco', amount: 337.35, category: 'Food' },
+  { id: 14, date: '2020-01-24', description: 'TD-Mortgage', amount: 998.78, category: 'Housing' },
 ]
-
-function createData(id, date, description, amount, category, protein) {
-  return { id, date, description, amount, category, protein };
-}
-
-const rows = [];
-
-for (let i = 0; i < 200; i += 1) {
-  const randomSelection = sample[Math.floor(Math.random() * sample.length)];
-  rows.push(createData(i, ...randomSelection));
-}
 
 export default function ReactVirtualizedTable() {
   return (
@@ -182,33 +174,25 @@ export default function ReactVirtualizedTable() {
         rowGetter={({ index }) => rows[index]}
         columns={[
           {
-            width: 200,
+            width: 120,
             label: 'Date',
             dataKey: 'date',
           },
           {
-            width: 120,
-            label: 'Description\u00A0(g)',
+            width: 200,
+            label: 'Description',
             dataKey: 'description',
-            numeric: true,
           },
           {
             width: 120,
-            label: 'Amount ($)\u00A0(g)',
+            label: 'Amount\u00A0($)',
             dataKey: 'amount',
             numeric: true,
           },
           {
             width: 120,
-            label: 'Category\u00A0(g)',
+            label: 'Category',
             dataKey: 'category',
-            numeric: true,
-          },
-          {
-            width: 120,
-            label: 'Protein\u00A0(g)',
-            dataKey: 'protein',
-            numeric: true,
           },
         ]}
       />
