@@ -1,5 +1,6 @@
 import React, { useEffect, useContext } from 'react';
 import DataContext from '../context/data/dataContext';
+import Navbar from './nav/Nav';
 
 const Home = () => {
   const dataContext = useContext(DataContext);
@@ -10,6 +11,7 @@ const Home = () => {
   }, []);
   return (
     <div>
+      <Navbar />
       <h2>Home page</h2>
     </div>
   );

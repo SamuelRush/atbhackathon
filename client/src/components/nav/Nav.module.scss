@@ -1,0 +1,160 @@
+@import '../../styles/_mixins.scss';
+
+.navbar {
+	background-color: #3366cc;
+	display: flex;
+	position: relative;
+	justify-content: space-around;
+  margin: 0 auto;
+	padding: 10px;
+	@include mobile {
+		justify-content: space-between;
+		padding: 20px;
+	}
+	&__logo {
+		display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+		font-size: 36px;
+		width: 70px;
+    height: 70px;
+    font-weight: 700;
+    background-color: inherit;
+		@include mobile {
+			display: none;
+		}
+	}
+	&__list {
+    color: #202510;
+		display: flex;
+		flex: 0 0 70%;
+		justify-content: flex-end; 
+		@include mobile {
+			display: none;
+		}
+	}
+	&__right {
+		display: flex;
+		& > * {
+			margin-right: 15px;
+			@include mobile {
+				margin-right: 0;
+			}
+		}
+	}
+	&__item {
+		display: flex;
+		justify-content: center;
+		padding: 0 10px;
+		@include mobile {
+			width: 100%;
+			padding-left: 86px;
+		}
+		&__link {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: white;
+			background-color: transparent;
+			transition: color 0.2s linear;
+			& > * {
+				@include mobile {
+					height: 50px;
+					line-height: 50px;
+				}
+			}
+		}
+	}
+	&__toggle {
+		outline: none;
+		background-color: transparent;
+    border: none;
+    padding: 0;
+    display: none;
+    width: 30px;
+		height: 24px;
+		& > span {
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			height: 3px;
+			width: 100%;
+			background-color: #15484c;
+			display: block;
+			position: absolute;
+			transition: opacity 0.3s;
+		}
+		@include mobile {
+			display: inherit;
+			position: absolute;
+			right: 20px;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 6;
+			&:before {
+				content: '';
+				top: 0;
+				left: 0;
+				height: 3px;
+				width: 100%;
+				background-color: #15484c;
+				display: block;
+				position: absolute;
+				transition: all 0.3s;
+			}
+			&:after {
+				content: '';
+				bottom: 0;
+				left: 0;
+				height: 3px;
+				width: 100%;
+				background-color: #15484c;
+				display: block;
+				position: absolute;
+				transition: all 0.3s;
+			}
+		}
+	}
+	&_showed {
+		& .navbar__menu {
+			transform: scaleY(1);
+		}
+		& .navbar__toggle > span {
+			opacity: 0;
+			visibility: hidden;
+		}
+		& .navbar__toggle:before {
+			top: 50%;
+			transform: translateY(-50%) rotate(-45deg);
+		}
+		& .navbar__toggle:after {
+			bottom: 50%;
+			transform: translateY(50%) rotate(45deg);
+		}
+	}
+}
+
+.btn {
+  width: 120px;
+	height: 50px;
+	border-radius: 6px;
+	background-color: inherit;
+  font-family: 'Acme, sans-serif';
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font: inherit;
+	padding: 10px;
+	margin: 10px;
+  font-weight: 300;
+  &:focus{
+    outline: 0;
+  }
+  & > a {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+  }
+}
