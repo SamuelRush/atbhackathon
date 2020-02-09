@@ -1,0 +1,35 @@
+{
+  "name": "schmos-server",
+  "version": "1.0.0",
+  "description": "ATB Open Banking Hackathon",
+  "main": "src/App.js",
+  "engines": {
+    "node": "10.16.3",
+    "npm": "6.x"
+  },
+  "scripts": {
+    "start": "node ./src/App.js",
+    "watch": "./node_modules/.bin/nodemon --watch src -e js ./src/App.js",
+    "test:server": "NODE_ENV=test npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikel-k-khui/battleship-server.git"
+  },
+  "author": "Michael Chui and Russell McWhae",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikel-k-khui/battleship-server/issues"
+  },
+  "homepage": "https://github.com/mikel-k-khui/battleship-server#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jquery": "^3.4.1",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.5.0",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
+}
