@@ -6,7 +6,7 @@ import Chart from "react-google-charts";
 import GoalChart from "./GoalChart";
 import customClasses from "./hero.module.scss";
 
-export default function Hero() {
+export default function Hero(props) {
   const useStyles = makeStyles(theme => ({
     root: {
       flexGrow: 1
@@ -20,18 +20,24 @@ export default function Hero() {
   const classes = useStyles();
   const comparisionData = [
     ["Name", "expenditure"],
-    ["Grocery", 250],
-    ["Insurance", 600],
-    ["Medical", 2900],
-    ["Entertainment", 8200]
+    ["Housing", 2032.12],
+    ["Vehicle", 782.34],
+    ["Food", 400.21],
+    ["Entertainment", 893.00],
+    ["Travel", 302.76],
+    ["Health", 200.32],
+    ["Fees", 40.00],
   ];
 
   const userData = [
     ["Name", "expenditure"],
-    ["Grocery", 370],
-    ["Insurance", 4200],
-    ["Medical", 700],
-    ["Entertainment", 1500]
+    ["Housing", 1781.91],
+    ["Vehicle", 4426.98],
+    ["Food", 529.73],
+    ["Entertainment", 1085.28],
+    ["Travel", 2952.58],
+    ["Health", 179.75],
+    ["Fees", 135.2],
   ];
 
   const options = {
@@ -49,6 +55,31 @@ export default function Hero() {
       }
     }
   };
+
+  const chartEvents = [
+    {
+      eventName: 'select',
+      callback: ({ chartWrapper }) => {
+        const chart = chartWrapper.getChart()
+        const selection = chart.getSelection()
+        if (selection.length === 1) {
+          const [selectedItem] = selection
+          const dataTable = chartWrapper.getDataTable()
+          const { row, column } = selectedItem
+          console.log('row', row)
+          if (row === 3) {
+            alert('It looks like most people in your area do not have car leases with Ferrari. It may be worth looking at that to save money.')
+          } else if (row === 9) {
+            alert('It looks like most people in your area do not travel with Westjet. It may be worth decreasing travel to save money.')
+          } else {
+            alert("You're doing good in this category. Focus elsewhere for savings.")
+          }
+        }
+      },
+    },
+  ]
+
+  console.log('props', props)
   return (
     <div className={classes.root}>
       <Grid container spacing={3}>
@@ -61,29 +92,7 @@ export default function Hero() {
               height="400px"
               diffdata={{ old: comparisionData, new: userData }}
               options={options}
-              chartEvents={[
-                {
-                  eventName: 'select',
-                  callback: ({ chartWrapper }) => {
-                    const chart = chartWrapper.getChart()
-                    const selection = chart.getSelection()
-                    if (selection.length === 1) {
-                      const [selectedItem] = selection
-                      const dataTable = chartWrapper.getDataTable()
-                      const { row, column } = selectedItem
-                      alert(
-                        'You selected : ' +
-                          JSON.stringify({
-                            dataTable
-                          }),
-                        null,
-                        8,
-                      )
-                    }
-                    console.log(selection)
-                  },
-                },
-              ]}
+              chartEvents={chartEvents}
             />
           </Paper>
         </Grid>
