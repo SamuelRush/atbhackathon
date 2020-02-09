@@ -12,21 +12,33 @@ const DataState = props => {
     data: null,
     upcomingGoals: [
       {
-        category: 'Grocery',
-        value: 800
+        category: 'Housing',
+        value: 1900
       },
       {
-        category: 'Gas',
-        value: 150
+        category: 'Vehicles',
+        value: 1000
+      },
+      {
+        category: 'Food',
+        value: 400
       },
       {
         category: 'Entertainment',
-        value: 50
+        value: 900
       },
       {
-        category: 'Restaurants',
-        value: 500
-      }
+        category: 'Travel',
+        value: 300
+      },
+      {
+        category: 'Health',
+        value: 100
+      },
+      {
+        category: 'Fees',
+        value: 155
+      },
     ]
   };
 

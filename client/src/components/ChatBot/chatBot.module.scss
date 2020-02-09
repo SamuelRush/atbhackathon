@@ -1,0 +1,19 @@
+.container {
+  position: fixed;
+  z-index: 2;
+  top: 80%;
+  left: 90%;
+  width: 100px;
+  height: 100px;
+  & img {
+    width: 100%;
+  }
+}
+
+.text {
+  text-align: center;
+}
+
+.ancor {
+  color: black;
+}
