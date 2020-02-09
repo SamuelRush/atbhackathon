@@ -3,15 +3,19 @@
 .navbar {
 	background-color: #3366cc;
 	display: flex;
-	position: relative;
+	grid-area: header;
+	position: sticky;
+	top: 0;
+	z-index: 2000;
 	justify-content: space-around;
-  margin: 0 auto;
 	padding: 10px 30px;
 	@include mobile {
 		justify-content: space-between;
 		padding: 20px;
 	}
 	&__logo {
+		font-family: 'Economica',
+			sans-serif;
 		display: flex;
     justify-content: center;
     align-items: center;
@@ -21,9 +25,9 @@
     height: 70px;
     font-weight: 700;
     background-color: inherit;
-		@include mobile {
-			display: none;
-		}
+		// @include mobile {
+		// 	display: none;
+		// }
 	}
 	&__list {
     color: #202510;

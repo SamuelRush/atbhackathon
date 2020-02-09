@@ -1,0 +1,13 @@
+As a user, i want to improve my financial wellbeing, 
+as a user i want my financial goals to be realistic by having a conversation about my current financial situation (strategies to save more, sell current assets, new career opportunities, etc.)
+as a user i want to know ways to decrease my expenses based on comparisons to similar users
+as a user i want to have the ability to track my financial goals
+
+as a bank i want to attract more customers for investing
+as a bank i want my customers to improve their financial well being
+
+as the app i want to collect data to sell to interested entrepreneurs
+as the app i want to link customer data to investing opportunities
+
+as a business i want to attract more customers
+as a business i want to purchase data on competing businesses

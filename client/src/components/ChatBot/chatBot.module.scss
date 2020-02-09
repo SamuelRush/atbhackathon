@@ -1,19 +1,14 @@
-.container {
-  position: fixed;
-  z-index: 2;
-  top: 80%;
-  left: 90%;
-  width: 100px;
-  height: 100px;
-  & img {
-    width: 100%;
+@import '../../styles/_mixins.scss'; 
+// this is for chatbot
+// due to fixed header
+.chat-container {
+  @include mobile {
+    top: 110px !important;
   }
 }
 
-.text {
-  text-align: center;
-}
-
-.ancor {
-  color: black;
+@media screen and (max-width: 568px) {
+  .rsc-container {
+    top: 110px !important;
+  }
 }

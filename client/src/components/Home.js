@@ -5,7 +5,7 @@ import Navbar from "./nav/Nav";
 import Transactions from "./Transactions/Transactions";
 import Prizes from "./Prizes/Prizes";
 
-const Home = () => {
+const Home = ({ toggleFloating }) => {
   const dataContext = useContext(DataContext);
 
   useEffect(() => {
@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div>
 
-      <Hero />
+      <Hero toggleFloating={toggleFloating} />
       <Transactions />
       <Prizes />
     </div>

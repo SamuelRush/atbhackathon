@@ -3,9 +3,8 @@ import axios from "axios";
 import DataContext from "./dataContext";
 import DataReducer from "./dataReducer";
 
-import {
-  //GET_ITEMS
-} from "../actionTypes";
+import //GET_ITEMS
+"../actionTypes";
 
 const DataState = props => {
   const initialState = {
@@ -44,11 +43,10 @@ const DataState = props => {
 
   const [state, dispatch] = useReducer(DataReducer, initialState);
 
-
   const getData = async () => {
     try {
-      const res = await axios.get("https://api.leapos.ca/obp/v4.0.0/my/banks/78d7bcc927c76240f5999f9d7218aec/accounts/ACCOUNT_ID/transactions");
-      console.log(res)
+      // const res = await axios.get("https://api.leapos.ca/obp/v4.0.0/my/banks/78d7bcc927c76240f5999f9d7218aec/accounts/ACCOUNT_ID/transactions");
+      // console.log(res)
       // dispatch({
       //   type: DATA_ITEMS,
       //   payload: revItems
@@ -60,7 +58,6 @@ const DataState = props => {
       // });
     }
   };
-
 
   return (
     <DataContext.Provider

@@ -1,0 +1,386 @@
+[
+  {
+    "id": "5532164271822-2da79f59-087",
+    "label": "Wealth Private Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "942525966868-d9712a13-284",
+    "label": "Wealth Private Chequing Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "9043177494179-6e71c060-029",
+    "label": "myChequing",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "2524119902112-a9b50e60-7a0",
+    "label": "Unlimited Transact Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "3962351133046-f9b4106e-93f",
+    "label": "Springboard Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "4493339090308-12886f95-e3e",
+    "label": "R-Product Saving - Business",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "9043171164440-e9e61470-eb9",
+    "label": "myChequing",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "5090619851098-8ee82bb0-46f",
+    "label": "Preferred Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "4052095672593-7ee71183-dec",
+    "label": "International Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "479519821612-d7f09d22-b91",
+    "label": "R-Product Saving - Retail",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "942549011196-914634af-0f2",
+    "label": "Wealth Private Chequing Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "3962397090831-f05dd6b0-dca",
+    "label": "Springboard Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "5090653314707-a9405b1f-b50",
+    "label": "Preferred Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "4052016652670-8f4e5c8d-074",
+    "label": "International Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "4052068891926-2772957d-e93",
+    "label": "International Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "5532123326005-8d9c22f9-7cf",
+    "label": "Wealth Private Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "3962382187930-0e08256a-b69",
+    "label": "Springboard Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "5532183235598-2ccc1bb3-103",
+    "label": "Wealth Private Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "2524118357262-e2ca2159-8b3",
+    "label": "Unlimited Transact Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "942557167025-6aa63f55-684",
+    "label": "Wealth Private Chequing Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "4052011466999-c77c6c2f-c6a",
+    "label": "International Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "9043158125023-3227d887-670",
+    "label": "myChequing",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "6755323579496-d1079d5e-9ce",
+    "label": "Preferred Chequing Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "942559958629-1689d1c5-534",
+    "label": "Wealth Private Chequing Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "479545112637-bfc82e3d-c3f",
+    "label": "R-Product Saving - Retail",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "5532128909691-9c608844-552",
+    "label": "Wealth Private Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "2524172903399-c6388edc-dfa",
+    "label": "Unlimited Transact Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "4052090956898-60e93422-eb8",
+    "label": "International Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "4052065761013-9d6fe14e-ecc",
+    "label": "International Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "4493321435952-512bb19f-e2d",
+    "label": "R-Product Saving - Business",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "9043144941091-443514e5-a0f",
+    "label": "myChequing",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "6755313089802-94793597-0e1",
+    "label": "Preferred Chequing Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "942540350652-ba814051-46e",
+    "label": "Wealth Private Chequing Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "479592571457-bbd0de7e-07e",
+    "label": "R-Product Saving - Retail",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "942529728587-20f79f45-6cc",
+    "label": "Wealth Private Chequing Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "4252846797821-4fee6c09-f2e",
+    "label": "R-Product Chequing - Retail",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "9043116440249-e0681850-32a",
+    "label": "myChequing",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "479551764456-70ad0fe3-dcb",
+    "label": "R-Product Saving - Retail",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "5532190240904-67876c3d-a97",
+    "label": "Wealth Private Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "4052004805327-850207c6-983",
+    "label": "International Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "479541571273-13bcba20-dc4",
+    "label": "R-Product Saving - Retail",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "2524193924839-d473a787-d0c",
+    "label": "Unlimited Transact Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "6755333918547-c6fee7da-e82",
+    "label": "Preferred Chequing Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "5532190048216-5a7448d6-b54",
+    "label": "Wealth Private Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "5532109687829-21a03f7b-960",
+    "label": "Wealth Private Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "479540500341-fd09e44c-27e",
+    "label": "R-Product Saving - Retail",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "4052025895434-9a04f095-c5a",
+    "label": "International Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "5090689594750-a1437e8b-a97",
+    "label": "Preferred Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "4493335283193-e61a7c7e-901",
+    "label": "R-Product Saving - Business",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "4052026988900-97db5116-6bb",
+    "label": "International Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "5532169638439-72a7d829-1e9",
+    "label": "Wealth Private Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "3962339398005-5d3021e0-071",
+    "label": "Springboard Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "5090640043671-7a585f00-38a",
+    "label": "Preferred Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "4493303784189-69ce55a4-e31",
+    "label": "R-Product Saving - Business",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "5090690952535-d5ee860d-5b7",
+    "label": "Preferred Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "942597818971-0bbbdfa2-d35",
+    "label": "Wealth Private Chequing Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "3962389777643-0e866fef-685",
+    "label": "Springboard Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "4052029034692-59992dfe-609",
+    "label": "International Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "5090620572706-c2224f1e-a3f",
+    "label": "Preferred Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "3962379603916-3509e444-e02",
+    "label": "Springboard Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "4493313863214-29fbbd75-882",
+    "label": "R-Product Saving - Business",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "479509075209-85e0a5c0-d04",
+    "label": "R-Product Saving - Retail",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "4252851126039-13d48b22-42b",
+    "label": "R-Product Chequing - Retail",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  },
+  {
+    "id": "5532144418747-e0b9ce76-33b",
+    "label": "Wealth Private Savings Account",
+    "bank_id": "49289590adb43040e69c0d925408aed",
+    "views_available": []
+  }
+]
