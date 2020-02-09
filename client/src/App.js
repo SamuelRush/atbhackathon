@@ -26,7 +26,7 @@ function App() {
               style={{ "gridArea": "content-header" }}
               className="content-header"
             >
-              Welcome Carille
+              Welcome Oleks
             </header>
             <main style={{ "gridArea": "main", padding: 40 }}>
               <ChatBot chatOpened={chatOpened} toggleFloating={toggleFloating} />

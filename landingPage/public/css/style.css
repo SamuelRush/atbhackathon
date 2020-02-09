@@ -9,7 +9,8 @@
 /**************** common css start ****************/
 /* line 3, /Applications/MAMP/htdocs/palash/cl/july 2019/192 Agency/192 Agency html/sass/_common.scss */
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Ubuntu Mono',
+    monospace;
   padding: 0;
   margin: 0;
   font-size: 14px;
@@ -3432,6 +3433,7 @@ ul {
 
 /* line 24, /Applications/MAMP/htdocs/palash/cl/july 2019/192 Agency/192 Agency html/sass/_review.scss */
 .review_part .review_part_text .client_info img {
+  border-radius: 50%;
   height: 90px;
   width: 90px;
   float: left;

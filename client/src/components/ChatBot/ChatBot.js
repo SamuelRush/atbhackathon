@@ -24,7 +24,7 @@ const config = {
 const steps = [
   {
     id: "1",
-    message: "Hi Carille, how are you feeling today?",
+    message: "Hi Oleks, how are you feeling today?",
     trigger: "2"
   },
   {
