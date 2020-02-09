@@ -1,70 +1,366 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Welcome to Lighthouse Lab's Battleship</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="stylesheet" href="">
-    <style> 
-      div {
-        width: 400px;
-        height: 400px;
-        background: dodgerblue;
-        -webkit-transition: width 3s; /* For Safari 3.1 to 6.0 */
-        transition: width 3s ease-in-out, height 3s ease-in-out;
-        position: relative;
-        text-align: center;
-      }
-      
-      div:hover img {
-        -webkit-transition: height 3s, width 3s; /* For Safari 3.1 to 6.0 */
-        transition: height 3s, width 3s;
-        transition-timing-function: ease-in-out;
-        transform: rotate(300deg);
-      }
-
-      div:hover {
-        width: 100%;
-        height: 600px;
-      }
-
-      div img {
-        position:absolute;
-        bottom: 100px;
-        right: 100px;
-        transform: rotate(270deg);
-      }
-
-      h1 {
-        font-family: 'Inconsolata', monospace;
-        font-size: 1.5em;
-        text-align: center;
-        color: lime;
-        text-align: center;
-      }
-
-      h2 {
-        font-family: 'Inconsolata', monospace;
-        font-size: 1.5em;
-        text-align: center;
-        color: lime;
-        text-align: center;
-      }
-      </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>dizzi</title>
+    <link rel="icon" href="img/favicon.png" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css" />
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body style="background-color: black">
-    <h1>☠ Want to play a game? ☠</h1>
-    <h2>🏴‍EErrr...I dare you to sink my boat!</h2>
-    <div id="sea">
-      <a href="https://battleship-lhl.herokuapp.com/">
-        <img src="intro_boat.png" style="width:182px; height:186px" alt="Pirate Ships" >
-      </a>
+
+  <body>
+    <!--::header part start::-->
+    <header class="main_menu home_menu">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="index.html">
+                <h2 style="color:white">$CHMO$<strong style="color:orange">.</strong></h2>
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="ti-menu"></span>
+              </button>
+
+              <div
+                class="collapse navbar-collapse main-menu-item justify-content-center"
+                id="navbarSupportedContent"
+              >
+                <ul class="navbar-nav align-items-center">
+                  <li class="nav-item">
+                    <a style="width: 100px" class="btn_1 nav-link" href="http://localhost:3000">Sign In</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="social_icon d-none d-lg-block">
+                <a href="#"><i class="ti-facebook"></i></a>
+                <a href="#"><i class="ti-twitter-alt"></i></a>
+                <a href="#"><i class="ti-dribbble"></i></a>
+                <a href="#"><i class="ti-instagram"></i></a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header part end-->
+
+    <!-- banner part start-->
+    <section class="banner_part">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 offset-lg-1">
+            <div class="banner_text">
+              <div class="banner_text_iner">
+                <h1>Saving is hard.</h1>
+                <h5>...or is it?</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner part start-->
+
+    <!--::client logo part end::-->
+    <section class="client_logo">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <div
+              class="client_logo_slider owl-carousel d-flex justify-content-between"
+            >
+              <div class="single_client_logo">
+                <img src="img/logo/Logo1.png" alt="" />
+              </div>
+              <div class="single_client_logo">
+                <img src="img/logo/Logo2.png" alt="" />
+              </div>
+              <div class="single_client_logo">
+                <img src="img/logo/Logo3.png" alt="" />
+              </div>
+              <div class="single_client_logo">
+                <img src="img/logo/Logo4.png" alt="" />
+              </div>
+              <div class="single_client_logo">
+                <img src="img/logo/Logo5.png" alt="" />
+              </div>
+              <div class="single_client_logo">
+                <img src="img/logo/Logo6.png" alt="" />
+              </div>
+              <div class="single_client_logo">
+                <img src="img/logo/Logo1.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--::client logo part end::-->
+
+    <!-- our_service start-->
+    <section style="margin-top: 100px; margin-bottom: 60px;" class="our_service">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-xl-4">
+            <div class="single_feature">
+              <div class="single_service">
+                <span>01</span>
+                <h4>
+                  Own Your <br />
+                  Financial Wellness
+                </h4>
+                <p>
+                  Personalize the roadmap to your financial goal.
+                </p>
+                <ul>
+                  <li><a href="#">No Pricey Experts.</a></li>
+                  <li><a href="#">No Generic Templates.</a></li>
+                  <li><a href="#">Savings Made For You.</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 0px" class="col-sm-6 col-xl-4">
+            <div class="single_feature">
+              <div class="single_service">
+                <span>02</span>
+                <h4>Choose Your <br />
+                  Feel-Good Incentives</h4>
+                <p>
+                  You choose the tangible rewards for your soul.
+                </p>
+                <ul>
+                  <li><a href="#">Save.</a></li>
+                  <li><a href="#">Achieve.</a></li>
+                  <li><a href="#">Enjoy.</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 0px" class="col-sm-6 col-xl-4">
+            <div class="single_feature">
+              <div class="single_service">
+                <span>03</span>
+                <h4>Easy Money <br />
+                  Conversation Starters</h4>
+                <p>
+                  We make it easier for you to talk about money - everyday.
+                </p>
+                <ul>
+                  <li><a href="#">Family.</a></li>
+                  <li><a href="#">Friends.</a></li>
+                  <li><a href="#">Community.</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- our_service part end-->
+
+    <!-- about part start-->
+    <section class="creative padding_bottom">
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-start">
+          <div class="col-md-6 col-xl-6">
+            <div class="creative_img">
+              <img src="img/LandingStock_image_07.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <div class="creative_part_text">
+              <h2>We have your best interest at hearts.</h2>
+              <p>
+                No limits to your savings.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about part end-->
+
+    <!--::review_part end::-->
+    <div class="review_part padding_bottom" id="testimonial">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-7">
+            <div class="section_tittle text-center">
+              <p>Testimonials</p>
+              <h2>What our community say</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="review_part_text owl-carousel">
+              <div class="singler_eview_part">
+                <div class="client_info">
+                  <img src="img/client_1.png" alt="" />
+                  <h4>Matt Sembinelli</h4>
+                  <p>Self Employed Professional</p>
+                </div>
+                <p>
+                  "Thank you $chrom$ for making my dream possible!"
+                </p>
+              </div>
+              <div class="singler_eview_part">
+                <div class="client_info">
+                  <img src="img/client_2.png" alt="" />
+                  <h4>Curtis Strange</h4>
+                  <p>Bank Teller / Golfer</p>
+                </div>
+                <p>
+                  "I wish I thought of that."
+                </p>
+              </div>
+              <div class="singler_eview_part">
+                <div class="client_info">
+                  <img src="img/client_1.png" alt="" />
+                  <h4>Jane Smith</h4>
+                  <p>Mom of $chmo$ Co-Founder</p>
+                </div>
+                <p>
+                  "Move out already. But cewl internet thingy...i guess."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="img/animate_icon/icon_3.png" class="animation_icon_3" alt="">
     </div>
+    <!--::review_part end::-->
+
+    <!--::cta_part start::-->
+    <div class="cta_part">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <div class="cta_iner">
+              <h1>Saving is easier with us.</h1>
+              <a href="http://localhost:3000" class="btn_1">Sign In</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--::cta_part end::-->
+
+    <!-- footer part start-->
+    <footer class="footer-area">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-sm-6 col-md-3 col-xl-3">
+            <div class="single-footer-widget footer_1">
+              <a href="index.html">
+                <h2 style="color:blue">$CHMO$<strong style="color:orange">.</strong></h2>
+              </a>
+              <ul>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+              <div class="social_icon">
+                <a href="#"><i class="ti-facebook"></i></a>
+                <a href="#"><i class="ti-twitter-alt"></i></a>
+                <a href="#"><i class="ti-dribbble"></i></a>
+                <a href="#"><i class="ti-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 col-md-3">
+            <div class="single-footer-widget footer_2">
+              <h4>Company</h4>
+              <ul>
+                <li>
+                  <a href="#">Join us for coffee</a>
+                </li>
+                <li>
+                  <a href="#">Testimonials</a>
+                </li>
+                <li>
+                  <a href="#">FAQ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 col-md-3">
+            <div class="single-footer-widget footer_2">
+              <div class="single_contact_info">
+                <h3>Calgary - Canada</h3>
+                <p>630 8 Ave SW #600, Calgary, AB T2P 1G6</p>
+                <p>1-8-SAVING-IS-HARD</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="copyright_part_text text-center">
+              <div class="row">
+                <div class="col-lg-12">
+                  <p class="footer-text m-0">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="img/animate_icon/icon_2.png" class="animation_icon_2" alt="">
+
+    </footer>
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- isotope js -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
   </body>
 </html>

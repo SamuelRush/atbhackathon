@@ -1,7 +1,7 @@
 {
-  "name": "battleship-server",
+  "name": "schmos-server",
   "version": "1.0.0",
-  "description": "Phaser + React + Socket.io battleship",
+  "description": "ATB Open Banking Hackathon",
   "main": "src/App.js",
   "engines": {
     "node": "10.16.3",
