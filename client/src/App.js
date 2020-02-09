@@ -10,7 +10,7 @@ import './App.css';
 
 function App() {
   // getAccountId();
-  testIt("5532164271822-fd17b52f-dc6", "owner");
+  // testIt("5532164271822-fd17b52f-dc6", "owner");
   return (
     <AuthState>
     <DataState>

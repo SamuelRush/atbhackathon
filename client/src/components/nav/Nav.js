@@ -28,7 +28,7 @@ class Nav extends React.Component {
         <nav className={classes.navbar}>
           <MenuToggle onClick={this.sideDrawerToggleHandler} />
           <Link to="/">
-            <div className={classes.navbar__logo}>SchmoS</div>
+            <div className={classes.navbar__logo}>$chmo$</div>
           </Link>
           <div className={classes.navbar__list}>
             <NavItems />
