@@ -12,7 +12,7 @@ const Home = () => {
   }, []);
   return (
     <div>
-      <Navbar />
+
       <Hero />
       <Transactions />
     </div>

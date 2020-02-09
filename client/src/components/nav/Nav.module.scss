@@ -6,7 +6,7 @@
 	position: relative;
 	justify-content: space-around;
   margin: 0 auto;
-	padding: 10px;
+	padding: 10px 30px;
 	@include mobile {
 		justify-content: space-between;
 		padding: 20px;
@@ -17,7 +17,7 @@
     align-items: center;
     color: white;
 		font-size: 36px;
-		width: 70px;
+		min-width: 70px;
     height: 70px;
     font-weight: 700;
     background-color: inherit;

@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import AuthState from './context/auth/AuthState';
 import DataState from './context/data/dataState';
 import Home from './components/Home';
-import Register from './components/Register';
+import Goals from './components/Goals/Goals';
+import Navbar from './components/nav/Nav';
 import './App.css';
 
 function App() {
@@ -13,9 +14,10 @@ function App() {
       <Router>
         <Fragment>
           <div className='container'>
+          <Navbar />
             <Switch>
               <Route exact path='/' component={Home} />
-              <Route exact path='/register' component={Register} />
+              <Route exact path='/goals' component={Goals} />
             </Switch>
           </div>
         </Fragment>
