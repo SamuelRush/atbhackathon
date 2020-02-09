@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Box from '@material-ui/core/Box';
 
 import classes from './Nav.module.scss';
-
 import MenuToggle from './menuToggle/MenuToggle';
 import NavItems from './nav-items/NavItems';
 import SideDrawer from './sideDrawer/SideDrawer';
@@ -25,7 +25,7 @@ class Nav extends React.Component {
   render() {
     return (
       <>
-        <nav className={classes.navbar}>
+        <Box className={classes.navbar} boxShadow={8}>
           <MenuToggle onClick={this.sideDrawerToggleHandler} />
           <Link to="/">
             <div className={classes.navbar__logo}>$chmo$</div>
@@ -38,7 +38,7 @@ class Nav extends React.Component {
               <Link to='/#'>Logout</Link>
             </button>
           </div>
-        </nav>
+        </Box>
         <SideDrawer
           open={this.state.showSideDrawer}
           closed={this.sideDrawerClosedHandler}

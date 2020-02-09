@@ -3,7 +3,15 @@
   text-align: center;
 }
 
-.App-header {
+.container.layout {
+  display: grid;
+  grid-template-areas: 'header header header header header header'
+  'menu content-header content-header content-header content-header content-header'
+  'menu main main main main main'
+  'menu main main main main main';
+}
+
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -12,6 +20,15 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+} */
+
+.content-header {
+  background: #eee;
+  color: #888;
+  font-size: 2em;
+  font-weight: 700;
+  padding: 20px 40px;
+  line-height: 1.5;
 }
 
 .App-link {

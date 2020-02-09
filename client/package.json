@@ -16,8 +16,9 @@
     "react-google-charts": "^3.0.15",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.1",
+    "react-virtualized": "^9.21.2",
     "sdk_atb_leapos": "git+ssh://git@github.com/hafbau/sdk_atb_leapos.git",
-    "react-virtualized": "^9.21.2"
+    "styled-components": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

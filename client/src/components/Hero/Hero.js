@@ -106,8 +106,8 @@ export default function Hero(props) {
               <GoalChart category="Medical" />
               <GoalChart category="Insurance" />
               <GoalChart category="Grocery" />
-              <Link to="/goals">
-                <Button variant="contained" color="primary">
+              <Link to="#/goals">
+                <Button variant="contained" color="primary" onClick={props.toggleFloating}>
                   Set Goals
                 </Button>
               </Link>

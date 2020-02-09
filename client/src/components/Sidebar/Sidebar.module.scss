@@ -1,0 +1,6 @@
+@import '../../styles/_mixins.scss';
+.sidebar {
+	@include mobile {
+		display: none;
+	}
+}
