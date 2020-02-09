@@ -8,7 +8,37 @@ import //GET_ITEMS
 
 const DataState = props => {
   const initialState = {
-    data: null
+    data: null,
+    upcomingGoals: [
+      {
+        category: 'Housing',
+        value: 1900
+      },
+      {
+        category: 'Vehicles',
+        value: 1000
+      },
+      {
+        category: 'Food',
+        value: 400
+      },
+      {
+        category: 'Entertainment',
+        value: 900
+      },
+      {
+        category: 'Travel',
+        value: 300
+      },
+      {
+        category: 'Health',
+        value: 100
+      },
+      {
+        category: 'Fees',
+        value: 155
+      },
+    ]
   };
 
   const [state, dispatch] = useReducer(DataReducer, initialState);
@@ -33,6 +63,7 @@ const DataState = props => {
     <DataContext.Provider
       value={{
         data: state.data,
+        upcomingGoals: state.upcomingGoals,
         getData
       }}
     >

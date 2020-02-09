@@ -1,0 +1,97 @@
+
+@import '../../../styles//mixins';
+
+.sideDrawer {
+	position: fixed;
+	width: 350px;
+	max-width: 70%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 200;
+	background-color: #feffed;
+	padding: 32px 16px;
+	box-sizing: border-box;
+	transition: transform 0.4s ease-out;
+}
+
+.wrapper {
+	position: relative;
+	width: 100%;
+}
+
+@media (min-width: 767px) {
+	.sideDrawer {
+		display: none;
+	}
+}
+
+.open {
+	transform: translateX(0);
+}
+
+.close {
+  transform: translateX(-100%);
+  &_btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 10px;
+    margin: 10px;
+    font-weight: 300;
+    &:focus{
+      outline: 0;
+    }
+      @include mobile {
+        display: inherit;
+        position: absolute;
+        right: 0;
+        top: -10px;
+        transform: translateY(-50%);
+        z-index: 6;
+        &:before {
+          content: '';
+          left: 0;
+          height: 3px;
+          width: 100%;
+          background-color: rgba(21, 72, 76, 0.6);
+          display: block;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%) rotate(-45deg);
+        }
+        &:after {
+          content: '';
+          left: 0;
+          height: 3px;
+          width: 100%;
+          background-color: rgba(21, 72, 76, 0.6);
+          display: block;
+          position: absolute;
+          bottom: 50%;
+          transform: translateY(50%) rotate(45deg);
+        }
+      }
+
+  }
+
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(51, 102, 204);
+  font-size: 36px;
+  height: 70px;
+  font-weight: 700;
+  background-color: inherit;
+  
+}
+
+.nav {
+  margin-top: 50px;
+}

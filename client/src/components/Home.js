@@ -1,16 +1,22 @@
-import React, { useEffect, useContext } from 'react';
-import DataContext from '../context/data/dataContext';
+import React, { useEffect, useContext } from "react";
+import DataContext from "../context/data/dataContext";
+import Hero from "./Hero/Hero";
+import Navbar from "./nav/Nav";
+import Transactions from "./Transactions/Transactions";
+import Prizes from "./Prizes/Prizes";
 
 const Home = () => {
   const dataContext = useContext(DataContext);
 
   useEffect(() => {
     dataContext.getData();
-    // eslint-disable-next-line
   }, []);
   return (
     <div>
-      <h2>Home page</h2>
+
+      <Hero />
+      <Transactions />
+      <Prizes />
     </div>
   );
 };
