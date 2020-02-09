@@ -5,6 +5,7 @@ import DataState from './context/data/dataState';
 import Home from './components/Home';
 import Goals from './components/Goals/Goals';
 import Navbar from './components/nav/Nav';
+import ChatBot from "./components/ChatBot/ChatBot";
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Fragment>
           <div className='container'>
           <Navbar />
+            <ChatBot />
             <Switch>
               <Route exact path='/' component={Home} />
               <Route exact path='/goals' component={Goals} />

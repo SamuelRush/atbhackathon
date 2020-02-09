@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import classes from './Goals.module.scss';
 import DataContext from '../../context/data/dataContext';
+import GoalChart from '../Hero/GoalChart';
 
 const Goals = () => {
   const dataContext = useContext(DataContext);
@@ -22,13 +23,14 @@ const Goals = () => {
         </ul>
         <div>
           <button className={classes.btn} onClick={() => setGoals(true)}>
-            Auto Sagest
+            Auto Suggestion
           </button>
           <button className={classes.btn}>
             Change
           </button>
         </div>
       </div>
+      <GoalChart category="Income" />
     </div>
   );
 };

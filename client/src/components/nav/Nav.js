@@ -22,13 +22,14 @@ class Nav extends React.Component {
     });
   };
 
-
   render() {
     return (
       <>
         <nav className={classes.navbar}>
           <MenuToggle onClick={this.sideDrawerToggleHandler} />
-          <div className={classes.navbar__logo}>SchmoS</div>
+          <Link to="/">
+            <div className={classes.navbar__logo}>SchmoS</div>
+          </Link>
           <div className={classes.navbar__list}>
             <NavItems />
           </div>
