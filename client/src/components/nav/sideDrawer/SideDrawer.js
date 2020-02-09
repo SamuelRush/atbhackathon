@@ -18,7 +18,7 @@ const sideDrawer = props => {
           <button className={classes.close_btn} onClick={props.onClick}>
             <span></span>
           </button>
-          <div className={classes.logo}>LHL</div>
+          <div className={classes.logo}>SchmoS</div>
           <nav className={classes.nav}>
             <NavItems onClick={props.onClick} />
           </nav>
