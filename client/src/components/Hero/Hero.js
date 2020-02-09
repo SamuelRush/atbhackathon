@@ -3,6 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import Chart from "react-google-charts";
+import GoalChart from "./GoalChart";
+import customClasses from "./hero.module.scss";
 
 export default function Hero() {
   const useStyles = makeStyles(theme => ({
@@ -64,7 +66,12 @@ export default function Hero() {
         </Grid>
         <Grid item xs>
           <Paper className={classes.paper}>
-
+            <div className={customClasses.goalWrapper}>
+              <GoalChart category="Income" />
+              <GoalChart category="Medical" />
+              <GoalChart category="Insurance" />
+              <GoalChart category="Grocery" />
+            </div>
           </Paper>
         </Grid>
       </Grid>
