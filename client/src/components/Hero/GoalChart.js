@@ -14,7 +14,8 @@ export default function GoalChart(props) {
   };
   return (
     <div className={classes.wrapper}>
-      <h6>{props.category}</h6>
+      <h2 className="Cheading">Goals</h2>
+      <h6 style={{ marginBottom: 0 }}>{props.category}</h6>
       <Chart chartType="PieChart" width="100%" height="250px" data={data} options={options} />
     </div>
   );

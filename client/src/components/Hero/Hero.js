@@ -5,6 +5,8 @@ import Grid from "@material-ui/core/Grid";
 import Chart from "react-google-charts";
 import GoalChart from "./GoalChart";
 import customClasses from "./hero.module.scss";
+import Button from "@material-ui/core/Button";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   const useStyles = makeStyles(theme => ({
@@ -54,7 +56,7 @@ export default function Hero() {
       <Grid container spacing={3}>
         <Grid item xs={12} sm={8}>
           <Paper className={classes.paper}>
-            <h2>Financial Summary</h2>
+            <h2 className="Cheading">Financial Summary</h2>
             <Chart
               chartType="ColumnChart"
               width="100%"
@@ -64,13 +66,19 @@ export default function Hero() {
             />
           </Paper>
         </Grid>
-        <Grid item xs>
+
+        <Grid item xs={12} sm={4}>
           <Paper className={classes.paper}>
             <div className={customClasses.goalWrapper}>
               <GoalChart category="Income" />
               <GoalChart category="Medical" />
               <GoalChart category="Insurance" />
               <GoalChart category="Grocery" />
+              <Link to="/goals">
+                <Button variant="contained" color="primary">
+                  Set Goals
+                </Button>
+              </Link>
             </div>
           </Paper>
         </Grid>
