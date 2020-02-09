@@ -1,13 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles, makeStyles } from '@material-ui/core/styles';
 import TableCell from '@material-ui/core/TableCell';
 import Paper from '@material-ui/core/Paper';
 import { AutoSizer, Column, Table } from 'react-virtualized';
 
 
 // ---------------- STYLES ---------------- //
+
+
+//
+// const useStyles = makeStyles(theme => ({
+//   root: {
+//     flexGrow: 1
+//   },
+//   paper: {
+//     padding: theme.spacing(2),
+//     textAlign: "center",
+//     color: theme.palette.text.secondary
+//   }
+// }));
+// const classes = useStyles();
+//
 
 const styles = theme => ({
   flexContainer: {
@@ -169,6 +184,7 @@ const rows = [
 export default function ReactVirtualizedTable() {
   return (
     <Paper style={{ height: 400, width: '100%' }}>
+      <h2>Transactions</h2>
       <VirtualizedTable
         rowCount={rows.length}
         rowGetter={({ index }) => rows[index]}

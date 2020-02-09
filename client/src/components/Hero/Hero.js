@@ -61,6 +61,29 @@ export default function Hero() {
               height="400px"
               diffdata={{ old: comparisionData, new: userData }}
               options={options}
+              chartEvents={[
+                {
+                  eventName: 'select',
+                  callback: ({ chartWrapper }) => {
+                    const chart = chartWrapper.getChart()
+                    const selection = chart.getSelection()
+                    if (selection.length === 1) {
+                      const [selectedItem] = selection
+                      const dataTable = chartWrapper.getDataTable()
+                      const { row, column } = selectedItem
+                      alert(
+                        'You selected : ' +
+                          JSON.stringify({
+                            dataTable
+                          }),
+                        null,
+                        8,
+                      )
+                    }
+                    console.log(selection)
+                  },
+                },
+              ]}
             />
           </Paper>
         </Grid>
